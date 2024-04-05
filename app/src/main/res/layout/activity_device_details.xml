@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    tools:context=".DeviceDetails">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+
+        android:padding="15dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/imageView_device_logo"
+            android:layout_width="119dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:maxWidth="180dp"
+            android:src="@drawable/mintra" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView_device_logo"
+            android:id="@+id/textView_logo"
+            android:layout_marginTop="6dp"
+            android:text="Device Info"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/pink"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_device_name"
+            android:layout_below="@+id/textView_logo"
+            android:text="Device Name"
+            android:textColor="#555555"
+            android:padding="6dp"
+            android:textSize="16sp"
+            android:layout_marginTop="60dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_device_name"
+            android:hint="Device Name"
+            android:inputType="textPersonName"
+            android:textSize="16sp"
+            android:padding="6dp"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:layout_below="@id/textView_device_name"
+            android:background="@drawable/border" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_device_model"
+            android:layout_below="@id/editText_device_name"
+            android:text="Model Name"
+            android:textColor="#555555"
+            android:padding="6dp"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_device_model"
+            android:hint="Enter Device Model Name"
+            android:inputType="textEmailAddress"
+            android:textSize="16sp"
+            android:padding="6dp"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:layout_below="@id/textView_device_model"
+            android:background="@drawable/border"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_device_price"
+            android:layout_below="@+id/editText_device_model"
+            android:text="Price of Device "
+            android:textColor="#555555"
+            android:padding="6dp"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"
+
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_device_price"
+            android:hint="Enter Price Of Device"
+            android:inputType="textPersonName"
+            android:textSize="16sp"
+            android:padding="6dp"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:layout_below="@id/textView_device_price"
+            android:background="@drawable/border" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_add_device"
+            android:text="Add Device"
+            android:layout_marginTop="100dp"
+            android:layout_below="@id/editText_device_price"
+            android:layout_marginLeft="70dp"
+            android:background="@color/pink"
+            android:layout_marginRight="70dp"/>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

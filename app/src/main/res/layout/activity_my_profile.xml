@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    tools:context=".MyProfile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:padding="15dp"
+        android:background="@color/white">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/back_to_home"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/back_arrow"
+            />
+
+        <ImageView
+            android:id="@+id/imageView_myProfile_logo"
+            android:layout_width="119dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:maxWidth="180dp"
+            android:src="@drawable/mintra" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView_myProfile_logo"
+            android:id="@+id/textView_logo"
+            android:layout_marginTop="6dp"
+            android:text="My Profile"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/pink"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/editText_myProfile_name"
+            android:inputType="textPersonName"
+            android:textSize="16sp"
+            android:padding="6dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/textView_logo"
+            android:background="@drawable/border" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:id="@+id/editText_myProfile_email"
+            android:inputType="textPersonName"
+            android:textSize="16sp"
+            android:padding="6dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/editText_myProfile_name"
+            android:background="@drawable/border" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:id="@+id/editText_myProfile_dob"
+            android:inputType="textPersonName"
+            android:textSize="16sp"
+            android:padding="6dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/editText_myProfile_email"
+            android:background="@drawable/border" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:id="@+id/editText_myProfile_gender"
+            android:inputType="textPersonName"
+            android:textSize="16sp"
+            android:padding="6dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/editText_myProfile_dob"
+            android:background="@drawable/border" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:id="@+id/editText_myProfile_mobile"
+            android:inputType="textPersonName"
+            android:textSize="16sp"
+            android:padding="6dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/editText_myProfile_gender"
+            android:background="@drawable/border" />
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</ScrollView>
