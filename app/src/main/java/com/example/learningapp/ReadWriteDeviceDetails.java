@@ -40,6 +40,7 @@ public class ReadWriteDeviceDetails implements Serializable {
         this.device_model = model;
         this.device_price = price;
         System.out.println("i am in the consturcter ");
+        System.out.println("ramuuuu");
     }
 
 
