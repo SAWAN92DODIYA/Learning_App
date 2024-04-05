@@ -37,24 +37,27 @@ public class DeviceDetails extends AppCompatActivity {
         modelText = findViewById(R.id.editText_device_model);
         priceText  = findViewById(R.id.editText_device_price);
 
-        String device_name = deviceNameText.getText().toString();
-        String model_name = modelText.getText().toString();
-        String device_price = priceText.getText().toString();
+
         addDebeviceBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FirebaseAuth auth = FirebaseAuth.getInstance();
 
                 FirebaseUser firebaseUser = auth.getCurrentUser();
+                String device_name = deviceNameText.getText().toString();
+                String model_name = modelText.getText().toString();
+                String device_price = priceText.getText().toString();
 
                 // Enter user data into the firebase realtime database
-                ReadWriteDeviceDetails writeDeviceDetails = new ReadWriteDeviceDetails(device_name,model_name,device_price);
-//                    DatabaseReference referenceProfile = FirebaseDatabase.getInstance().getReferenceFromUrl("https://learningapp-b3391-default-rtdb.firebaseio.com/");
+                ReadWriteDeviceDetails writeDeviceDetails = new ReadWriteDeviceDetails(device_name,"234545ghghf5","gfgfgfggfgfg");
 
 
                 DatabaseReference referenceProfile = FirebaseDatabase.getInstance().getReferenceFromUrl("https://learningapp-b3391-default-rtdb.firebaseio.com/");
 
                 referenceProfile.child("devices").child(firebaseUser.getUid()).setValue(writeDeviceDetails).addOnCompleteListener(new OnCompleteListener<Void>() {
+                   //   .child(firebaseUser.getUid())   .....................   important line to read 
+
+
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                                             Toast.makeText(DeviceDetails.this,"b hoooo",Toast.LENGTH_SHORT).show();
