@@ -48,19 +48,20 @@ public class DeviceDetails extends AppCompatActivity {
                 String model_name = modelText.getText().toString();
                 String device_price = priceText.getText().toString();
 
+
                 // Enter user data into the firebase realtime database
-                ReadWriteDeviceDetails writeDeviceDetails = new ReadWriteDeviceDetails(device_name,"234545ghghf5","gfgfgfggfgfg");
+                ReadWriteDeviceDetails writeDeviceDetails = new ReadWriteDeviceDetails(device_name,model_name,device_price);
 
 
                 DatabaseReference referenceProfile = FirebaseDatabase.getInstance().getReferenceFromUrl("https://learningapp-b3391-default-rtdb.firebaseio.com/");
-
-                referenceProfile.child("devices").child(firebaseUser.getUid()).setValue(writeDeviceDetails).addOnCompleteListener(new OnCompleteListener<Void>() {
-                   //   .child(firebaseUser.getUid())   .....................   important line to read 
+                Toast.makeText(DeviceDetails.this,writeDeviceDetails.device_model,Toast.LENGTH_SHORT).show();
+                referenceProfile.child("devices").child(firebaseUser.getUid()).child("device1").setValue(writeDeviceDetails).addOnCompleteListener(new OnCompleteListener<Void>() {
+                   //   .child(firebaseUser.getUid())   .....................   important line to read
 
 
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
-                                            Toast.makeText(DeviceDetails.this,"b hoooo",Toast.LENGTH_SHORT).show();
+                                            Toast.makeText(DeviceDetails.this,"Device Details are Successfully Store ",Toast.LENGTH_SHORT).show();
                     }
                 });
 
