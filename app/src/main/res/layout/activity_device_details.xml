@@ -50,7 +50,7 @@
             android:textColor="#555555"
             android:padding="6dp"
             android:textSize="16sp"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="30dp"
             />
 
         <EditText
@@ -76,7 +76,7 @@
             android:textColor="#555555"
             android:padding="6dp"
             android:textSize="16sp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             />
 
         <EditText
@@ -102,7 +102,7 @@
             android:textColor="#555555"
             android:padding="6dp"
             android:textSize="16sp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
 
 
             />
@@ -126,15 +126,11 @@
             android:layout_height="wrap_content"
             android:id="@+id/button_add_device"
             android:text="Add Device"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="25dp"
             android:layout_below="@id/editText_device_price"
             android:layout_marginLeft="70dp"
             android:background="@color/pink"
             android:layout_marginRight="70dp"/>
-
-
-
-
 
 
 
