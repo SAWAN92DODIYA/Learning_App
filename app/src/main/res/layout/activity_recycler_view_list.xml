@@ -8,10 +8,16 @@
     tools:context=".RecyclerView_List"
     android:orientation="horizontal">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/recyclerContact"/>
-
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/recyclerContact"/>-->
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="data store "
+    android:textStyle="bold"
+    android:background="@color/pink"
+    />
 
 </LinearLayout>
